@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 #header {
@@ -9,7 +10,7 @@ body {
     background-color: #1f2937;
     display: flex;
     justify-content: space-between;    
-    padding: 8px;
+    padding: 8px 80px;
 }
 
 #logo {
@@ -36,11 +37,20 @@ body {
 }
 
 #hero {
+    align-items: center;
     background-color: #1f2937;
     display: flex;
-    gap: 16px;
-    justify-content: space-between;
-    padding: 8px;
+    gap: 80px;
+    justify-content: center;
+    padding: 80px;
+}
+
+#hero-left {
+    display: flex;
+    flex-basis: 450px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
 }
 
 #hero-title {
@@ -55,19 +65,28 @@ body {
 }
 
 #hero-button {
+    border: none;
+    border-radius: 8px;
     background-color: #3882F6;
+    font-weight: bold;
     color: #E5E7EB;
-    padding: 4px 8px;
+    padding: 5px 20px;
+    width: 100px;
 }
 
 #info {
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #info-content {
+    align-items: center;
     display: flex;
-    gap: 16px;
-    justify-content: center;    
+    flex-wrap: wrap;
+    gap: 36px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 #info-title {
@@ -76,16 +95,30 @@ body {
     font-weight: bolder;
 }
 
+.info-element-img {
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.info-element-text {
+    font-size: 14px;
+    width: 100px;
+}
+
 #quote {
     background-color: #E5E7EB;
     color: #1F2937;
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
+    padding: 80px 320px;
 }
 
 #quote-author {
     text-align: right;
+    font-weight: bold;
 }
 
 #call-to-action-card {
@@ -94,8 +127,8 @@ body {
     color: #E5E7EB;
     display: flex;
     justify-content: space-between;
-    margin: 8px;
-    padding: 8px;
+    margin: 50px 200px;
+    padding: 40px 160px;
 }
 
 #call-to-action-card-title {
@@ -104,10 +137,12 @@ body {
 }
 
 #call-to-action-card-button {
-    color: #E5E7EB;
     background-color: #3882F6;
     border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    color: #E5E7EB;
     font-weight: bold;
+    padding: 5px 20px;
 }
 
 #footer {
